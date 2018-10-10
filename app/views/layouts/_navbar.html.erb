@@ -19,12 +19,10 @@
         <b>Trip Diary</b>
       </p>
       <p class="navbar-item">
-        <b><%= link_to 'Home', controller: 'welcome', action: 'index'%></b>
+        <b><%= link_to 'Home', root_path %></b>
       </p>
 
-      <p class="navbar-item">
-        <b><%= link_to 'Contact Me', controller: 'welcome', action: 'index'%></b>
-      </p>
+      
       
     </div>
     </div>
@@ -32,10 +30,10 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <p class="navbar-item">
-        <b><%= link_to 'Sign Up', controller: 'sign_up', action: 'index' %></b>
+        <b><%= link_to 'Sign Up', controller: 'users/registrations', action: 'index' %></b>
         </p>
         <p class="navbar-item">
-        <b><%= link_to 'Login', controller: 'log_in', action: 'index' %></b>
+        <b><%= link_to 'Login', controller: 'users/sessions', action: 'index' %></b>
         </p>
     </div>
   </div>
